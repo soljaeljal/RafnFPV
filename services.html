@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPV cinematography, live streaming and photography</title>
+    <meta name="description"
+        content="As a front person view (FPV) drone-pilot I offer high quality services with drones specifically customised to the job">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="//vjs.zencdn.net/5.4.6/video-js.min.css">
+    <link rel="icon" type="image/png" href="assets/images/LOGO.png"/>
+    <script src="assets/js/navigation.js" defer></script>
+    <script src="//vjs.zencdn.net/5.4.6/video.min.js" defer></script>
+    <script src="https://kit.fontawesome.com/068d2453df.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="top-nav">
+            <a href="index.html"><img src="assets/images/LOGO.png" class="top-nav__logo" alt="logo"></a>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__anchor" href="index.html">Home</a></li>
+                <li class="nav__item"><a class="nav__anchor" href="portfolio.html">Portfolio</a></li>
+                <li class="nav__item"><a class="nav__anchor nav__anchor--active" href="#">Services & Drones</a></li>
+                <li class="nav__item"><a class="nav__anchor" href="about.html">About me</a></li>
+                <li class="nav__item"><a class="nav__anchor" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="top-nav__burger">
+                <div class="burger__line1"></div>
+                <div class="burger__line2"></div>
+                <div class="burger__line3"></div>
+            </div>
+        </nav>
+    </header>
+    <button onclick="backToTop()" class="scroll-top"><i class="fa fa-chevron-up"></i></button>
+    <main>
+        <section class="flex">
+            <div class="vertical-line">
+                <h1 class="section-heading">Services</h1>
+            </div>
+            <a class="services-small-anchor" href="#drones">Jump to drones</a>
+        </section>
+
+        <section class="services__container">
+            <div class="container__info">
+                   <!-- Drone icon made by https://www.flaticon.com/authors/smashicons"-->
+                <img class="services__icon"
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnIHRyYW5zZm9ybT0ibWF0cml4KDEuMDAwMDAwMDAwMDAwMDAwMiwwLDAsMS4wMDAwMDAwMDAwMDAwMDAyLDAsLTIuODQyMTcwOTQzMDQwNDAwN2UtMTMpIj4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCTxnPgoJCTxnPgoJCQk8cGF0aCBkPSJNMzE1LjczMywyNjguNzk3SDE5Ni4yNjdjLTQuNzEsMC04LjUzMywzLjgyMy04LjUzMyw4LjUzM3MzLjgyMyw4LjUzMyw4LjUzMyw4LjUzM2gxMTkuNDY3ICAgICBjNC43MSwwLDguNTMzLTMuODIzLDguNTMzLTguNTMzUzMyMC40NDQsMjY4Ljc5NywzMTUuNzMzLDI2OC43OTd6IiBmaWxsPSIjZTYzNzM3IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+CgkJCTxwYXRoIGQ9Ik01MDMuNDY3LDEyMy43MzNINDYwLjh2LTE0LjY2OWMwLTEwLjczNS04LjczLTE5LjQ2NS0xOS40NjUtMTkuNDY1aC0xMi4yNzFjLTEwLjczNSwwLTE5LjQ2NCw4LjczLTE5LjQ2NCwxOS40NjV2MTQuNjY5ICAgICBoLTQyLjY2N2MtNC43MSwwLTguNTMzLDMuODIzLTguNTMzLDguNTMzYzAsNC43MSwzLjgyMyw4LjUzMyw4LjUzMyw4LjUzM0g0MDkuNmgxNy4wNjd2NjEuMTk4ICAgICBjLTkuOTMxLDMuNTIzLTE3LjA2NywxMy4wMDktMTcuMDY3LDI0LjEzMnYwLjAwOGgtMTcuMDY3di0wLjAwNGMwLTE0LjExNC0xMS40ODYtMjUuNi0yNS42LTI1LjZoLTUxLjE5OGgtMTcuMDY4di0xNy4wNjcgICAgIGMwLTIzLjUxOC0xOS4xNC00Mi42NjctNDIuNjY3LTQyLjY2N2MtMjMuNTI2LDAtNDIuNjY3LDE5LjE0OS00Mi42NjcsNDIuNjY3djE3LjA2N2gtMTcuMDY1aC01MS4yMDIgICAgIGMtMTQuMTE0LDAtMjUuNiwxMS40ODYtMjUuNiwyNS42SDEwMi40di0wLjAwM2MwLTExLjEyMy03LjEzNS0yMC42MDgtMTcuMDY3LTI0LjEzMlYxNDAuOEgxMDIuNHYtMC4wMDNoNDIuNjY3ICAgICBjNC43MSwwLDguNTMzLTMuODIzLDguNTMzLTguNTMzYzAtNC43MS0zLjgyMy04LjUzMy04LjUzMy04LjUzM0gxMDIuNHYtMTQuNjY1YzAtMTAuNzM1LTguNzMtMTkuNDY1LTE5LjQ2NS0xOS40NjVINzAuNjY1ICAgICBDNTkuOTMsODkuNiw1MS4yLDk4LjMzLDUxLjIsMTA5LjA2NXYxNC42NjVIOC41MzNjLTQuNzEsMC04LjUzMywzLjgyMy04LjUzMyw4LjUzM2MwLDQuNzEsMy44MjMsOC41MzMsOC41MzMsOC41MzNINTEuMnYwLjAwMyAgICAgaDE3LjA2N3Y2MS4xOThDNTguMzM1LDIwNS41MjIsNTEuMiwyMTUuMDA3LDUxLjIsMjI2LjEzdjY4LjI2N2MwLDE0LjEyMywxMS40ODYsMjUuNiwyNS42LDI1LjYgICAgIGMxNC4xMTMsMCwyNS41OTgtMTEuNDc2LDI1LjYtMjUuNTk3aDE3LjA2N2MwLDE0LjExNCwxMS40ODYsMjUuNiwyNS42LDI1LjZoMTEuMjI0bC00NC4zMTYsODEuMjQ2ICAgICBjLTIuMjYxLDQuMTM5LTAuNzM0LDkuMzE4LDMuNDA1LDExLjU4YzEuMjk3LDAuNzA4LDIuNjk3LDEuMDQxLDQuMDc5LDEuMDQxYzMuMDIxLDAsNS45NDgtMS42MDQsNy41MDEtNC40NDZMMTc1LjczNCwzMjBoNDYuMTMzICAgICB2MzQuMTYzYy01LjM1Niw3LjEzMS04LjUzMywxNS45ODYtOC41MzMsMjUuNTdjMCwyMy41MjYsMTkuMTQsNDIuNjY3LDQyLjY2Nyw0Mi42NjdjMjMuNTI2LDAsNDIuNjY3LTE5LjE0LDQyLjY2Ny00Mi42NjcgICAgIGMwLTkuNTg0LTMuMTc4LTE4LjQzOS04LjUzMy0yNS41N1YzMjBoNDYuMTMzbDQ4Ljc3NSw4OS40MjFjMS41NTMsMi44NDIsNC40OCw0LjQ0Niw3LjUwMSw0LjQ0NiAgICAgYzEuMzgyLDAsMi43ODItMC4zMzMsNC4wNzktMS4wNDFjNC4xMzktMi4yNjEsNS42NjYtNy40NDEsMy40MDUtMTEuNThMMzU1LjcxLDMyMGgxMS4yMjRjMTQuMTEzLDAsMjUuNTk4LTExLjQ4MywyNS42LTI1LjU5NiAgICAgSDQwOS42YzAuMDA0LDE0LjExOSwxMS40ODgsMjUuNTkyLDI1LjYsMjUuNTkyYzE0LjExNCwwLDI1LjYtMTEuNDc3LDI1LjYtMjUuNlYyMjYuMTNjMC0xMS4xMjMtNy4xMzUtMjAuNjA4LTE3LjA2Ny0yNC4xMzIgICAgIFYxNDAuOEg0NjAuOGg0Mi42NjdjNC43MSwwLDguNTMzLTMuODIzLDguNTMzLTguNTMzQzUxMiwxMjcuNTU2LDUwOC4xNzcsMTIzLjczMyw1MDMuNDY3LDEyMy43MzN6IE02OC4yNjcsMTA5LjA2NSAgICAgYzAtMS4zMzEsMS4wNzUtMi4zOTgsMi4zOTgtMi4zOThoMTIuMjcxYzEuMzIzLDAsMi4zOTgsMS4wNjcsMi4zOTgsMi4zOTh2MTQuNjY1SDY4LjI2N1YxMDkuMDY1eiBNMjMwLjQsMTgzLjQ2NyAgICAgYzAtMTQuMTE0LDExLjQ4Ni0yNS42LDI1LjYtMjUuNnMyNS42LDExLjQ4NiwyNS42LDI1LjZ2MTcuMDY3aC01MS4yVjE4My40Njd6IE0yMTMuMzMzLDIxNy42aDg1LjMzM2gzLjI2MWwtOC41MzMsMTcuMDY3ICAgICBoLTc0Ljc4NmwtOC41MzMtMTcuMDY3SDIxMy4zMzN6IE03Ni44LDMwMi45M2MtNC43MDIsMC04LjUzMy0zLjgyMy04LjUzMy04LjUzM1YyMjYuMTNjMC00LjcwMiwzLjgzMS04LjUzMyw4LjUzMy04LjUzMyAgICAgYzQuNzAyLDAsOC41MzMsMy44MzEsOC41MzMsOC41MzN2MC4wMDN2NjguMjYzQzg1LjMzMywyOTkuMTA3LDgxLjUwMiwzMDIuOTMsNzYuOCwzMDIuOTN6IE0xMDIuNCwyNzcuMzMzVjI0My4yaDE3LjA2N3YzNC4xMzMgICAgIEgxMDIuNHogTTI1Niw0MDUuMzMzYy0xNC4xMTQsMC0yNS42LTExLjQ4Ni0yNS42LTI1LjZjMC01Ljk4OSwyLjA3NC0xMS41MDEsNS41MzQtMTUuODY3YzAuNjMyLTAuNTQsMS4xODMtMS4xNywxLjYzNS0xLjg3MSAgICAgYzQuNjYtNC44NDEsMTEuMTk4LTcuODYyLDE4LjQzMS03Ljg2MnMxMy43NzEsMy4wMjEsMTguNDMxLDcuODYyYzAuNDUzLDAuNzAxLDEuMDAzLDEuMzMxLDEuNjM1LDEuODcxICAgICBjMy40Niw0LjM2Niw1LjUzNCw5Ljg3OCw1LjUzNCwxNS44NjdDMjgxLjYsMzkzLjg0NywyNzAuMTE0LDQwNS4zMzMsMjU2LDQwNS4zMzN6IE0yNzMuMDY3LDM0MC42NCAgICAgYy01LjIzLTIuMjkyLTExLTMuNTczLTE3LjA2Ny0zLjU3M3MtMTEuODM2LDEuMjgxLTE3LjA2NywzLjU3M1YzMjBoMzQuMTMzVjM0MC42NHogTTM2Ni45MzMsMzAyLjkzM0gxNDUuMDY3ICAgICBjLTQuNzAyLDAtOC41MzMtMy44MzEtOC41MzMtOC41MzN2LTY4LjI2N2MwLTQuNzAyLDMuODMxLTguNTMzLDguNTMzLTguNTMzaDQ1LjkyNGwxNC43MDcsMjkuNDE0ICAgICBjMS40NTEsMi44OTMsNC40MDMsNC43MTksNy42MzcsNC43MTloODUuMzMzYzMuMjM0LDAsNi4xODctMS44MjYsNy42MjktNC43MTlsMTQuNzA3LTI5LjQxNGg0NS45MjkgICAgIGM0LjcwMiwwLDguNTMzLDMuODMxLDguNTMzLDguNTMzdjAuMDA0VjI5NC40QzM3NS40NjcsMjk5LjEwMiwzNzEuNjM1LDMwMi45MzMsMzY2LjkzMywzMDIuOTMzeiBNMzkyLjUzMywyNDMuMjA0SDQwOS42djM0LjEzMyAgICAgaC0xNy4wNjdWMjQzLjIwNHogTTQ0My43MzMsMjk0LjM5N2MwLDQuNzEtMy44MzEsOC41MzMtOC41MzMsOC41MzNzLTguNTMzLTMuODIzLTguNTMzLTguNTMzdi02OC4yNTl2LTAuMDA4ICAgICBjMC00LjcwMiwzLjgzMS04LjUzMyw4LjUzMy04LjUzM3M4LjUzMywzLjgzMSw4LjUzMyw4LjUzM1YyOTQuMzk3eiBNNDI2LjY2NywxMjMuNzMzdi0xNC42NjljMC0xLjMzMSwxLjA3NS0yLjM5OCwyLjM5OC0yLjM5OCAgICAgaDEyLjI3MWMxLjMyMywwLDIuMzk4LDEuMDY3LDIuMzk4LDIuMzk4djE0LjY2OUg0MjYuNjY3eiIgZmlsbD0iI2U2MzczNyIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgoJCTwvZz4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+" alt="icon"/>
+                <h3 class="services__secondary-heading">Cinematography</h3>
+                <p class="services__body-text">Drone cinematography has been widely applied for various types of uses
+                    like filming motor sports, festivals, indoors, music videos, scenery, action sports and many more.
+                    Drone video lets you visually tell a story in a way that the average camera is unable to do by
+                    offering highly dynamic shots and a bird's eye view perspective.</p>
+            </div>
+            <div class="container__info">
+                <!-- Live stream icon made by https://www.freepik.com -->
+                <img class="services__icon"
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIuMDAwMzgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnIHRyYW5zZm9ybT0ibWF0cml4KDAuOCwwLDAsMC43OTk5OTk5OTk5OTk5OTk5LDQ5LjU1NzQyMTg3NDk5OTkzLDUxLjE5OTk5OTk5OTk5OTk2KSI+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtNDQ1LjQ4NDM3NSAyMzkuMjYxNzE5aC0zOTUuMzk0NTMxYy0yNy42MjEwOTQgMC01MC4wODk4NDQgMjIuNDY4NzUtNTAuMDg5ODQ0IDUwLjA4OTg0M3YxNzIuNTYyNWMwIDI3LjYxNzE4OCAyMi40Njg3NSA1MC4wODU5MzggNTAuMDg5ODQ0IDUwLjA4NTkzOGgzOTUuMzk0NTMxYzI3LjYyMTA5NCAwIDUwLjA4OTg0NC0yMi40Njg3NSA1MC4wODk4NDQtNTAuMDg1OTM4di0xNzIuNTYyNWMwLTI3LjYyMTA5My0yMi40Njg3NS01MC4wODk4NDMtNTAuMDg5ODQ0LTUwLjA4OTg0M3ptMjAuMDg5ODQ0IDIyMi42NTIzNDNjMCAxMS4wNzQyMTktOS4wMTE3MTkgMjAuMDg1OTM4LTIwLjA4OTg0NCAyMC4wODU5MzhoLTM5NS4zOTQ1MzFjLTExLjA3ODEyNSAwLTIwLjA4OTg0NC05LjAxMTcxOS0yMC4wODk4NDQtMjAuMDg1OTM4di0xNzIuNTYyNWMwLTExLjA3ODEyNCA5LjAxMTcxOS0yMC4wODk4NDMgMjAuMDg5ODQ0LTIwLjA4OTg0M2gzOTUuMzk0NTMxYzExLjA3ODEyNSAwIDIwLjA4OTg0NCA5LjAxMTcxOSAyMC4wODk4NDQgMjAuMDg5ODQzem0wIDAiIGZpbGw9IiNlNjM3MzciIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0yNDcuODI4MTI1IDE2MC42NDA2MjVjMTEuOTE3OTY5IDAgMjMuODM1OTM3LTQuNTI3MzQ0IDMyLjkxMDE1Ni0xMy41ODU5MzcgOC44MDA3ODEtOC43ODEyNSAxMy42NDQ1MzEtMjAuNDYwOTM4IDEzLjY0NDUzMS0zMi44ODY3MTlzLTQuODQzNzUtMjQuMTA1NDY5LTEzLjY0NDUzMS0zMi44ODY3MTljLTE4LjE0ODQzNy0xOC4xMTMyODEtNDcuNjc1NzgxLTE4LjExMzI4MS02NS44MjQyMTkgMC04LjgwMDc4MSA4Ljc4MTI1LTEzLjY0NDUzMSAyMC40NjA5MzgtMTMuNjQ0NTMxIDMyLjg4NjcxOXM0Ljg0Mzc1IDI0LjEwNTQ2OSAxMy42NDQ1MzEgMzIuODg2NzE5YzkuMDc0MjE5IDkuMDU4NTkzIDIwLjk5MjE4OCAxMy41ODU5MzcgMzIuOTE0MDYzIDEzLjU4NTkzN3ptLTExLjcyMjY1Ni01OC4xMjg5MDZjMy4yMzQzNzUtMy4yMjY1NjMgNy40NzY1NjItNC44MzU5MzggMTEuNzIyNjU2LTQuODM1OTM4IDQuMjQyMTg3IDAgOC40ODQzNzUgMS42MTMyODEgMTEuNzE0ODQ0IDQuODM1OTM4IDMuMTIxMDkzIDMuMTEzMjgxIDQuODM5ODQzIDcuMjUzOTA2IDQuODM5ODQzIDExLjY1NjI1IDAgNC40MDIzNDMtMS43MTg3NSA4LjUzOTA2Mi00LjgzNTkzNyAxMS42NTYyNS02LjQ2NDg0NCA2LjQ0OTIxOS0xNi45NzY1NjMgNi40NDUzMTItMjMuNDQxNDA2IDAtMy4xMjEwOTQtMy4xMTcxODgtNC44MzU5MzgtNy4yNTM5MDctNC44MzU5MzgtMTEuNjU2MjUgMC00LjQwMjM0NCAxLjcxODc1LTguNTM5MDYzIDQuODM1OTM4LTExLjY1NjI1em0wIDAiIGZpbGw9IiNlNjM3MzciIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0zMDIuNjM2NzE5IDE3OS43NjE3MTljMi45Mjk2ODcgMi45Mzc1IDYuNzczNDM3IDQuNDA2MjUgMTAuNjE3MTg3IDQuNDA2MjUgMy44MzU5MzggMCA3LjY2Nzk2OS0xLjQ2MDkzOCAxMC41OTc2NTYtNC4zODI4MTMgMTcuNTU4NTk0LTE3LjUyNzM0NCAyNy4yMzA0NjktNDAuODI4MTI1IDI3LjIzMDQ2OS02NS42MTcxODcgMC0yNC43ODkwNjMtOS42NzE4NzUtNDguMDkzNzUtMjcuMjMwNDY5LTY1LjYxNzE4OC01Ljg2MzI4MS01Ljg1MTU2Mi0xNS4zNjMyODEtNS44NDM3NS0yMS4yMTQ4NDMuMDE5NTMxLTUuODUxNTYzIDUuODYzMjgyLTUuODM5ODQ0IDE1LjM2MzI4Mi4wMjM0MzcgMjEuMjE0ODQ0IDExLjg3ODkwNiAxMS44NTU0NjkgMTguNDIxODc1IDI3LjYxNzE4OCAxOC40MjE4NzUgNDQuMzgyODEzIDAgMTYuNzYxNzE5LTYuNTQyOTY5IDMyLjUyNzM0My0xOC40MjE4NzUgNDQuMzgyODEyLTUuODYzMjgxIDUuODUxNTYzLTUuODc1IDE1LjM0NzY1Ny0uMDIzNDM3IDIxLjIxMDkzOHptMCAwIiBmaWxsPSIjZTYzNzM3IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtMTcxLjcyMjY1NiAxNzkuNzg1MTU2YzIuOTI5Njg4IDIuOTIxODc1IDYuNzYxNzE5IDQuMzgyODEzIDEwLjU5NzY1NiA0LjM4MjgxMyAzLjg0Mzc1IDAgNy42ODc1LTEuNDY4NzUgMTAuNjE3MTg4LTQuNDA2MjUgNS44NTE1NjItNS44NjMyODEgNS44Mzk4NDQtMTUuMzU5Mzc1LS4wMjM0MzgtMjEuMjEwOTM4LTExLjg3ODkwNi0xMS44NTkzNzUtMTguNDIxODc0LTI3LjYyMTA5My0xOC40MjE4NzQtNDQuMzg2NzE5IDAtMTYuNzYxNzE4IDYuNTQyOTY4LTMyLjUyMzQzNyAxOC40MjE4NzQtNDQuMzgyODEyIDUuODYzMjgyLTUuODUxNTYyIDUuODc1LTE1LjM0NzY1Ni4wMjM0MzgtMjEuMjEwOTM4LTUuODUxNTYyLTUuODY3MTg3LTE1LjM1MTU2Mi01Ljg3NS0yMS4yMTQ4NDQtLjAyMzQzNy0xNy41NTg1OTQgMTcuNTI3MzQ0LTI3LjIyNjU2MiA0MC44MjgxMjUtMjcuMjMwNDY4IDY1LjYxNzE4NyAwIDI0Ljc4OTA2MyA5LjY3MTg3NCA0OC4wOTM3NSAyNy4yMzA0NjggNjUuNjIxMDk0em0wIDAiIGZpbGw9IiNlNjM3MzciIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0xMzAuMzkwNjI1IDQyMS45NzY1NjJoLTQwLjI2NTYyNXYtMTA3LjY5MTQwNmMwLTguMjg1MTU2LTYuNzE0ODQ0LTE1LTE1LTE1cy0xNSA2LjcxNDg0NC0xNSAxNXYxMjIuNjkxNDA2YzAgOC4yODUxNTcgNi43MTQ4NDQgMTUgMTUgMTVoNTUuMjY1NjI1YzguMjgxMjUgMCAxNS02LjcxNDg0MyAxNS0xNSAwLTguMjgxMjUtNi43MTg3NS0xNS0xNS0xNXptMCAwIiBmaWxsPSIjZTYzNzM3IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtMTc2Ljg2MzI4MSAyOTkuMjg1MTU2Yy04LjI4NTE1NiAwLTE1IDYuNzE0ODQ0LTE1IDE1djEyMi42OTE0MDZjMCA4LjI4NTE1NyA2LjcxNDg0NCAxNSAxNSAxNSA4LjI4MTI1IDAgMTUtNi43MTQ4NDMgMTUtMTV2LTEyMi42OTE0MDZjMC04LjI4NTE1Ni02LjcxODc1LTE1LTE1LTE1em0wIDAiIGZpbGw9IiNlNjM3MzciIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0zMDguMDQyOTY5IDI5OS45MjU3ODFjLTcuOTI1NzgxLTIuMzk0NTMxLTE2LjMwMDc4MSAyLjA5Mzc1LTE4LjY5NTMxMyAxMC4wMjM0MzhsLTIyLjY3OTY4NyA3NS4xMjg5MDYtMjIuNjgzNTk0LTc1LjEyODkwNmMtMi4zOTQ1MzEtNy45MzM1OTQtMTAuNzY1NjI1LTEyLjQxNzk2OS0xOC42OTUzMTMtMTAuMDIzNDM4LTcuOTI5Njg3IDIuMzk0NTMxLTEyLjQxNzk2OCAxMC43NjU2MjUtMTAuMDIzNDM3IDE4LjY5NTMxM2wzNy4wNDI5NjkgMTIyLjY5MTQwNmMuMDAzOTA2LjAxMTcxOS4wMDc4MTIuMDIzNDM4LjAxMTcxOC4wMzUxNTYgNC4wODIwMzIgMTMuMDYyNSAyNC4xOTE0MDcgMTMuODU1NDY5IDI4LjY5NTMxMyAwIC4wMDM5MDYtLjAxMTcxOC4wMDc4MTMtLjAxOTUzMS4wMTE3MTktLjAzNTE1NmwzNy4wNDI5NjgtMTIyLjY5MTQwNmMyLjM5NDUzMi03LjkzMzU5NC0yLjA5NzY1Ni0xNi4zMDA3ODItMTAuMDI3MzQzLTE4LjY5NTMxM3ptMCAwIiBmaWxsPSIjZTYzNzM3IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtNDIwLjQ0OTIxOSAzMjkuMjg1MTU2YzguMjg1MTU2IDAgMTUtNi43MTQ4NDQgMTUtMTVzLTYuNzE0ODQ0LTE1LTE1LTE1aC02Ny42Njc5NjljLTguMjg1MTU2IDAtMTUgNi43MTQ4NDQtMTUgMTV2MTIyLjY5MTQwNmMwIDguMjg1MTU3IDYuNzE0ODQ0IDE1IDE1IDE1aDY1LjY0ODQzOGM4LjI4NTE1NiAwIDE1LTYuNzE0ODQzIDE1LTE1IDAtOC4yODEyNS02LjcxNDg0NC0xNS0xNS0xNWgtNTAuNjQ4NDM4di0zOS4wNzAzMTJoNDIuNTY2NDA2YzguMjg1MTU2IDAgMTUtNi43MTQ4NDQgMTUtMTVzLTYuNzE0ODQ0LTE1LTE1LTE1aC00Mi41NjY0MDZ2LTIzLjYyMTA5NHptMCAwIiBmaWxsPSIjZTYzNzM3IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtMzczLjMzOTg0NCAxMTQuMTY3OTY5YzAgMzMuNDQ1MzEyLTEzLjA1MDc4MiA2NC44OTQ1MzEtMzYuNzUgODguNTQ2ODc1LTUuODYzMjgyIDUuODUxNTYyLTUuODc1IDE1LjM1MTU2Mi0uMDIzNDM4IDIxLjIxNDg0NCAyLjkzMzU5NCAyLjkzMzU5MyA2Ljc3MzQzOCA0LjQwMjM0MyAxMC42MTcxODggNC40MDIzNDMgMy44MzU5MzcgMCA3LjY2Nzk2OC0xLjQ2MDkzNyAxMC41OTc2NTYtNC4zODI4MTIgMjkuMzc4OTA2LTI5LjMyMDMxMyA0NS41NTg1OTQtNjguMzA4NTk0IDQ1LjU1ODU5NC0xMDkuNzgxMjUgMC00MS40Njg3NS0xNi4xNzk2ODgtODAuNDYwOTM4LTQ1LjU1ODU5NC0xMDkuNzgxMjUtNS44NjMyODEtNS44NTE1NjMtMTUuMzU5Mzc1LTUuODQzNzUtMjEuMjE0ODQ0LjAxOTUzMS01Ljg1MTU2MiA1Ljg2MzI4MS01LjgzOTg0NCAxNS4zNjMyODEuMDIzNDM4IDIxLjIxNDg0NCAyMy42OTkyMTggMjMuNjUyMzQ0IDM2Ljc1IDU1LjA5NzY1NiAzNi43NSA4OC41NDY4NzV6bTAgMCIgZmlsbD0iI2U2MzczNyIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTE0OC4zOTA2MjUgMjI4LjMzMjAzMWMzLjg0Mzc1IDAgNy42ODc1LTEuNDY4NzUgMTAuNjE3MTg3LTQuNDAyMzQzIDUuODUxNTYzLTUuODYzMjgyIDUuODQzNzUtMTUuMzYzMjgyLS4wMjM0MzctMjEuMjE0ODQ0LTIzLjY5OTIxOS0yMy42NTIzNDQtMzYuNzUtNTUuMTAxNTYzLTM2Ljc1LTg4LjU1MDc4MiAwLTMzLjQ0NTMxMiAxMy4wNTA3ODEtNjQuODk0NTMxIDM2Ljc1LTg4LjU0Njg3NCA1Ljg2MzI4MS01Ljg1MTU2MyA1Ljg3NS0xNS4zNTE1NjMuMDIzNDM3LTIxLjIxMDkzOC01Ljg1NTQ2OC01Ljg2NzE4OC0xNS4zNTE1NjItNS44NzUtMjEuMjE0ODQzLS4wMjM0MzgtMjkuMzc4OTA3IDI5LjMyNDIxOS00NS41NTg1OTQgNjguMzEyNS00NS41NTg1OTQgMTA5Ljc4MTI1IDAgNDEuNDcyNjU3IDE2LjE3OTY4NyA4MC40NjA5MzggNDUuNTU4NTk0IDEwOS43ODUxNTcgMi45Mjk2ODcgMi45MjE4NzUgNi43NjE3MTkgNC4zODI4MTIgMTAuNTk3NjU2IDQuMzgyODEyem0wIDAiIGZpbGw9IiNlNjM3MzciIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48L2c+PC9zdmc+" alt="icon"/>
+                <h3 class="services__secondary-heading">Live streaming</h3>
+                <p class="services__body-text">Drone live streaming provides a secure real-time video stream from a
+                    drone's eye view to your audience. Various types of events are now able to be viewed by people from
+                    all around the world at their comfort while still providing extraordinary shots.</p>
+
+            </div>
+            <div class="container__info">
+                <!-- Photo icon made by https://www.flaticon.com/authors/kiranshastry -->
+                <img class="services__icon"
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQzMC4yMyA0MzAuMjMiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnIHRyYW5zZm9ybT0ibWF0cml4KDAuOCwwLDAsMC44LDQzLjAyMzA0Njg3NDk5OTk1LDQzLjAyMzA0Njg3NDk5OTk1KSI+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8Zz4KCQkJPHBhdGggZD0iTTIxNy44NzUsMTU5LjY2OGMtMjQuMjM3LDAtNDMuODg2LDE5LjY0OC00My44ODYsNDMuODg2YzAsMjQuMjM3LDE5LjY0OCw0My44ODYsNDMuODg2LDQzLjg4NiAgICAgYzI0LjIzNywwLDQzLjg4Ni0xOS42NDgsNDMuODg2LTQzLjg4NkMyNjEuNzYxLDE3OS4zMTYsMjQyLjExMywxNTkuNjY4LDIxNy44NzUsMTU5LjY2OHogTTIxNy44NzUsMjI2LjU0MSAgICAgYy0xMi42OTYsMC0yMi45ODgtMTAuMjkyLTIyLjk4OC0yMi45ODhjMC0xMi42OTYsMTAuMjkyLTIyLjk4OCwyMi45ODgtMjIuOTg4aDBjMTIuNjk2LDAsMjIuOTg4LDEwLjI5MiwyMi45ODgsMjIuOTg4ICAgICBDMjQwLjg2MywyMTYuMjQ5LDIzMC41NzEsMjI2LjU0MSwyMTcuODc1LDIyNi41NDF6IiBmaWxsPSIjZTYzNzM3IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+CgkJCTxwYXRoIGQ9Ik0zOTIuODk2LDU5LjM1N0wxMDcuNjM5LDI2Ljk2NmMtMTEuMDcxLTEuNTc0LTIyLjI4OCwxLjY1OC0zMC44MjQsOC44ODJjLTguNTM1LDYuNjE4LTE0LjAwNiwxNi40MjgtMTUuMTUxLDI3LjE2NyAgICAgbC01LjIyNCw0Mi44NDFINDAuMjQzYy0yMi45ODgsMC00MC4yMjksMjAuMzc1LTQwLjIyOSw0My4zNjNWMzYyLjljLTAuNTc5LDIxLjkyMSwxNi43MjIsNDAuMTYyLDM4LjY0NCw0MC43NDEgICAgIGMwLjUyOCwwLjAxNCwxLjA1NywwLjAxNywxLjU4NSwwLjAxaDI4Ni44MjRjMjIuOTg4LDAsNDMuODg2LTE3Ljc2Myw0My44ODYtNDAuNzUxdi04LjM1OSAgICAgYzcuMTI3LTEuMzc3LDEzLjg4OC00LjIyNCwxOS44NTMtOC4zNTljOC40NjUtNy4xMjcsMTMuODg1LTE3LjIyLDE1LjE1MS0yOC4yMTJsMjQuMDMzLTIxMi4xMTQgICAgIEM0MzIuNDQsODIuODE1LDQxNS45MDUsNjIuMDg4LDM5Mi44OTYsNTkuMzU3eiBNMzUwLjA1NSwzNjIuOWMwLDExLjQ5NC0xMS40OTQsMTkuODUzLTIyLjk4OCwxOS44NTNINDAuMjQzICAgICBjLTEwLjM4MywwLjMwNS0xOS4wNDctNy44NjUtMTkuMzUyLTE4LjI0OGMtMC4wMTYtMC41MzUtMC4wMDktMS4wNywwLjAyMS0xLjYwNXYtMzguNjYxbDgwLjk4LTU5LjU1OSAgICAgYzkuNzI4LTcuNDY5LDIzLjQzLTYuODA1LDMyLjM5MiwxLjU2N2w1Ni45NDcsNTAuMTU1YzguNjQ4LDcuMjYxLDE5LjUzNCwxMS4zMiwzMC44MjUsMTEuNDk0ICAgICBjOC44MjgsMC4xMDgsMTcuNTExLTIuMjQzLDI1LjA3OC02Ljc5MmwxMDIuOTIyLTU5LjU1OVYzNjIuOXogTTM1MC4wNTUsMjM2Ljk5bC0xMTMuODk0LDY2LjM1MSAgICAgYy05Ljc4LDUuNzk0LTIyLjE1OSw0Ljc0NS0zMC44MjUtMi42MTJsLTU3LjQ2OS01MC42NzhjLTE2LjQ3MS0xNC4xNTMtNDAuNTQ1LTE1LjAyMS01Ny45OTItMi4wOWwtNjguOTYzLDUwLjE1NVYxNDkuMjE5ICAgICBjMC0xMS40OTQsNy44MzctMjIuNDY1LDE5LjMzMS0yMi40NjVoMjg2LjgyNGMxMi4yOCwwLjUwOSwyMi4xOTcsMTAuMjAxLDIyLjk4OCwyMi40NjVWMjM2Ljk5eiBNNDA5LjExMiwxMDMuMDM1ICAgICBjLTAuMDA3LDAuMDY5LTAuMDEzLDAuMTM5LTAuMDIxLDAuMjA4bC0yNC41NTUsMjEyLjExNGMwLjA0Miw1LjUtMi40NjYsMTAuNzA5LTYuNzkyLDE0LjEwNmMtMi4wOSwyLjA5LTYuNzkyLDMuMTM1LTYuNzkyLDQuMTggICAgIFYxNDkuMjE5Yy0wLjgyNS0yMy44MDEtMjAuMDc3LTQyLjgyNC00My44ODYtNDMuMzYzSDc3LjMzN2w0LjcwMi00MC43NTFjMS4wMi01LjI3NywzLjc3OS0xMC4wNTksNy44MzctMTMuNTg0ICAgICBjNC41ODItMy4xNjgsMTAuMTIyLTQuNjQ1LDE1LjY3NC00LjE4bDI4NC43MzUsMzIuOTE0QzQwMS43NzMsODEuMzQ2LDQxMC4yMDMsOTEuNTQ1LDQwOS4xMTIsMTAzLjAzNXoiIGZpbGw9IiNlNjM3MzciIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCQk8L2c+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==" alt="icon"/>
+                <h3 class="services__secondary-heading">Photography</h3>
+                <p class="services__body-text">Drone photography offers a lot of versatility while still providing high
+                    quality images for your projects. It is a unique yet efficiently produced way to present all types
+                    of subjects. Drone captured unusual angle shots might give your clients a whole different insight
+                    and overview of the showcased project.
+                </p>
+            </div>
+
+            <div class="bg bg--services">
+                <div class="grain"></div>
+                <div class="black-bg"></div>
+            </div>
+            <div id="drones"></div>
+        </section>
+        <section class="flex">
+            <div class="vertical-line">
+                <h1 id="drones" class="section-heading">Drones</h1>
+            </div>
+        </section>
+        <section class="drones-container">
+            <div class="flex drones-wrapper">
+                <img class="drone-img" src="assets/images/drone-dji.png" alt="drone">
+                <div class="drone__specs">
+                    <h3 class="drone__heading">Dji inspire 2</h3>
+                    <p class="drone__specs--p">Technical specs:</p>
+                    <ul class="specs__list">
+                        <li class="specs__list-item">Resolution: 4K</li>
+                        <li class="specs__list-item">Max payload: 19 kg (at sea level)</li>
+                        <li class="specs__list-item">Top speed: 70 km/h</li>
+                        <li class="specs__list-item">Flight time: 10-20 min. (depending on payload)</li>
+                        <li class="specs__list-item">Setup time on location: 30 min.</li>
+                        <li class="specs__list-item">Airline travel: full package easily travels as checked luggage</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex drones-wrapper">
+                <img class="drone-img" src="assets/images/Livestream-drone.png" alt="drone">
+                <div class="drone__specs">
+                    <h3 class="drone__heading">Livestream</h3>
+                    <p class="drone__specs--p">Technical specs:</p>
+                    <ul class="specs__list">
+                        <li class="specs__list-item">Resolution: 4K</li>
+                        <li class="specs__list-item">Max payload: 19 kg (at sea level)</li>
+                        <li class="specs__list-item">Top speed: 70 km/h</li>
+                        <li class="specs__list-item">Flight time: 10-20 min. (depending on payload)</li>
+                        <li class="specs__list-item">Setup time on location: 30 min.</li>
+                        <li class="specs__list-item">Airline travel: full package easily travels as checked luggage</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex drones-wrapper">
+                <img class="drone-img" src="assets/images/drone-highspeed.png" alt="drone">
+                <div class="drone__specs">
+                    <h3 class="drone__heading">High-speed action</h3>
+                    <p class="drone__specs--p">Technical specs:</p>
+                    <ul class="specs__list">
+                        <li class="specs__list-item">Resolution: 4K</li>
+                        <li class="specs__list-item">Max payload: 19 kg (at sea level)</li>
+                        <li class="specs__list-item">Top speed: 70 km/h</li>
+                        <li class="specs__list-item">Flight time: 10-20 min. (depending on payload)</li>
+                        <li class="specs__list-item">Setup time on location: 30 min.</li>
+                        <li class="specs__list-item">Airline travel: full package easily travels as checked luggage</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex drones-wrapper">
+                <img class="drone-img" src="assets/images/drone-indoors.png" alt="drone">
+                <div class="drone__specs">
+                    <h3 class="drone__heading">Indoor FPV</h3>
+                    <p class="drone__specs--p">Technical specs:</p>
+                    <ul class="specs__list">
+                        <li class="specs__list-item">Resolution: 4K</li>
+                        <li class="specs__list-item">Max payload: 19 kg (at sea level)</li>
+                        <li class="specs__list-item">Top speed: 70 km/h</li>
+                        <li class="specs__list-item">Flight time: 10-20 min. (depending on payload)</li>
+                        <li class="specs__list-item">Setup time on location: 30 min.</li>
+                        <li class="specs__list-item">Airline travel: full package easily travels as checked luggage</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg">
+                <div class="grain"></div>
+                <div class="black-bg"></div>
+            </div>
+        </section>
+        <div class="vertical-line">
+            <h2 class="page-heading">See my work</h2>
+        </div>
+        <section class="featured-grid project-recommended">
+            <div>
+                <p class="featured__client-name">Martin Jensen</p>
+                <h3 class="featured__project-name">Martin Jensen AKKC</h3>
+                <a href="portfolio-project3.html">
+                    <video id="myVideo" class="featured__video video-js vjs-default-skin vjs-big-play-centered vjs-16-9" preload="auto"
+                        width="400" poster="assets/images/AKKCThumb.png" data-setup='{"controls": false, "loop": true}'>
+                        <source src="assets/video/MartinAKKCPreview.mp4" type="video/mp4" alt="project preview"/>
+                    </video>
+                </a>
+                <a class="featured__anchor small-anchor" href="portfolio-project.html">View project</a>
+            </div>
+
+            <div>
+                <p class="featured__client-name">Padborg</p>
+                <h3 class="featured__project-name">Padborg Park</h3>
+                <a href="portfolio-project4.html">
+                    <a href="portfolio-project.html">
+                        <video id="myVideo" class="featured__video video-js vjs-default-skin vjs-big-play-centered vjs-16-9" preload="auto"
+                            width="400" poster="assets/images/padborgThumb.jpg" data-setup='{"controls": false, "loop": true}'>
+                            <source src="assets/video/PadborgParkPreview.mp4" type="video/mp4" alt="project preview"/>
+                        </video>
+                    </a>
+                <a class="featured__anchor small-anchor" href="portfolio-project.html">View project</a>
+            </div>
+        </section>
+    </main>
+    <div class="bg bg--footer">
+        <div class="grain"></div>
+        <div class="black-bg"></div>
+    </div>
+    <footer>
+        <section class="footer-CTA">
+            <img class="footer-CTA--image" src="assets/images/69559558_413151562661973_4407087297002995712_n.png"
+                alt="portrait">
+            <div class="footer-CTA__container">
+                <div class="vertical-line vertical-line--footer">
+                    <h2 class="footer-CTA--heading">Have a project coming up?<br>Sky's the limit!</h2>
+                </div>
+                <a href="contact.html" class="red-button footer-CTA--button">Contact me</a>
+            </div>
+        </section>
+        <section class="footer-social">
+            <img class="footer-logo" src="assets/images/LOGO.png" alt="logo">
+            <div class="socials">
+                <!--Icons from fontawesome-->
+                <a href="https://www.instagram.com/rafnfpv/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/rafnfpv/" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                <a href="https://www.youtube.com/channel/UCwtUeQIKm00YMnHWKadbIWw" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <hr class="socials__border">
+                <div class="copyright">
+                    <p class="copyright__paragraph">© RAFNFPV 2021</p>
+                    <p class="copyright__paragraph">CVR 39773376</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

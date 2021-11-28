@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RafnFPV: Front person view drone cinematography</title>
+    <meta name="description"
+        content="Get a glimpse of my niche work with FPV drones and learn all about the gear I have used for the project">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="//vjs.zencdn.net/5.4.6/video-js.min.css">
+    <link rel="icon" type="image/png" href="assets/images/LOGO.png" />
+    <script src="assets/js/navigation.js" defer></script>
+    <script src="//vjs.zencdn.net/5.4.6/video.min.js" defer></script>
+    <script src="https://kit.fontawesome.com/068d2453df.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="top-nav">
+            <a href="index.html"><img src="assets/images/LOGO.png" class="top-nav__logo" alt="logo"></a>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__anchor" href="index.html">Home</a></li>
+                <li class="nav__item"><a class="nav__anchor" href="portfolio.html">Portfolio</a></li>
+                <li class="nav__item"><a class="nav__anchor" href="services.html">Services & Drones</a></li>
+                <li class="nav__item"><a class="nav__anchor" href="about.html">About me</a></li>
+                <li class="nav__item"><a class="nav__anchor" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="top-nav__burger">
+                <div class="burger__line1"></div>
+                <div class="burger__line2"></div>
+                <div class="burger__line3"></div>
+            </div>
+        </nav>
+    </header>
+    <button onclick="backToTop()" class="scroll-top"><i class="fa fa-chevron-up"></i></button>
+    <main>
+        <!-- Video player from video.js -->
+        <video class="video-project video-js vjs-default-skin vjs-big-play-centered vjs-16-9" controls preload="auto"
+            width="1075" poster="assets/images/backflipThumb.png" data-setup='{"controls":true}'>
+            <source src="assets/video/AlexPorsing.mp4" type="video/mp4" />
+        </video>
+        <div class="vertical-line">
+            <h1 class="page-heading">Alex Porsing - Truck Backflip</h1>
+        </div>
+        <section class="project-info flex">
+            <div class="project-info-wrapper">
+                <h2 class="project-info__heading">About the project</h2>
+                <p class="project-info__p">This project was commissioned by Redbull in collaboration with Alex Porsing.
+                    This shooting was to be a showcase of the record-breaking performance by Alex, and I was to capture
+                    the moment that it happened.<br><br>
+                    My role was to capture key moments, those being the moments spent in the air, and the landing. Since
+                    this was going to be a one off and I would not get a second shot, it had to be done perfectly. I did
+                    some initial planning before Alex went into the jump and the following shot of the air time was
+                    satisfactory.</p>
+            </div>
+            <div class="project-info-wrapper">
+                <h2 class="project-info__heading">Gear used</h2>
+                <p class="project-info__p">The rig I used for this shoot was a modified version of my high-speed rig,
+                    the shots still had to look good so quality was a priority. The rig was equipped with a 4K action
+                    camera, which allowed me to capture the action in high fidelity, while also keeping the drone fairly
+                    maneuverable.</p>
+            </div>
+        </section>
+        <!-- <div class="flex project-pagination">
+            <a class="small-anchor-right" href="services.html">Previous project</a>
+            <a class="small-anchor" href="services.html">Next project</a>
+        </div> -->
+
+        <div class="vertical-line">
+            <h2 class="page-heading">See more</h2>
+        </div>
+        <section class="featured-grid project-recommended">
+            <div>
+                <p class="featured__client-name">Martin Jensen</p>
+                <h3 class="featured__project-name">Martin Jensen AKKC</h3>
+                <a href="portfolio-project3.html">
+                    <video id="myVideo" class="featured__video video-js vjs-default-skin vjs-big-play-centered vjs-16-9" preload="auto"
+                        width="400" poster="assets/images/AKKCThumb.png" data-setup='{"controls": false, "loop": true}'>
+                        <source src="assets/video/MartinAKKCPreview.mp4" type="video/mp4" alt="project preview"/>
+                    </video>
+                </a>
+                <a class="featured__anchor small-anchor" href="portfolio-project3.html">View project</a>
+            </div>
+
+            <div>
+                <p class="featured__client-name">Padborg</p>
+                <h3 class="featured__project-name">Padborg Park</h3>
+                    <a href="portfolio-project4.html">
+                        <video id="myVideo" class="featured__video video-js vjs-default-skin vjs-big-play-centered vjs-16-9" preload="auto"
+                            width="400" poster="assets/images/padborgThumb.jpg" data-setup='{"controls": false, "loop": true}'>
+                            <source src="assets/video/PadborgParkPreview.mp4" type="video/mp4" alt="project preview"/>
+                        </video>
+                    </a>
+                <a class="featured__anchor small-anchor" href="portfolio-project4.html">View project</a>
+            </div>
+        </section>
+    </main>
+    <div class="bg bg--footer">
+        <div class="grain"></div>
+        <div class="black-bg"></div>
+    </div>
+    <footer>
+        <section class="footer-CTA">
+            <img class="footer-CTA--image" src="assets/images/69559558_413151562661973_4407087297002995712_n.png"
+                alt="portrait">
+            <div class="footer-CTA__container">
+                <div class="vertical-line vertical-line--footer">
+                    <h2 class="footer-CTA--heading">Have a project coming up?<br>Sky's the limit!</h2>
+                </div>
+                <a href="contact.html" class="red-button footer-CTA--button">Contact me</a>
+            </div>
+        </section>
+        <section class="footer-social">
+            <img class="footer-logo" src="assets/images/LOGO.png" alt="logo">
+            <div class="socials">
+                <!--Icons from fontawesome-->
+                <a href="https://www.instagram.com/rafnfpv/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/rafnfpv/" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                <a href="https://www.youtube.com/channel/UCwtUeQIKm00YMnHWKadbIWw" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <hr class="socials__border">
+                <div class="copyright">
+                    <p class="copyright__paragraph">© RAFNFPV 2021</p>
+                    <p class="copyright__paragraph">CVR 39773376</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
